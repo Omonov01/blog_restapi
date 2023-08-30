@@ -100,11 +100,7 @@ WSGI_APPLICATION = 'blog_project.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+    'default': "postgres://user:GMISAczf2Malo8LN24mME1RnH7j8tRRM@dpg-cjnguu6qdesc73adst3g-a.oregon-postgres.render.com/library_f3ye"
 
 
 # Password validation
