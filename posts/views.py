@@ -14,23 +14,23 @@ class UserViewSet(ModelViewSet):
     queryset = get_user_model().objects.all()
     serializer_class = UserSerialializer
 
-# class PostList(ListCreateAPIView):
-#     queryset = Post.objects.all()
-#     serializer_class = PostSerializer
+class PostList(ListCreateAPIView):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
 
 
-# class PostDetail(RetrieveUpdateDestroyAPIView):
-#     permission_classes = (IsAuthorOrReadOnly,)
-#     queryset = Post.objects.all()
-#     serializer_class = PostSerializer
+class PostDetail(RetrieveUpdateDestroyAPIView):
+    permission_classes = (IsAuthorOrReadOnly,)
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
 
 
 
-# class UserList(ListCreateAPIView):
-#     queryset = get_user_model().objects.all()
-#     serializer_class = PostSerializer
+class UserList(ListCreateAPIView):
+    queryset = get_user_model().objects.all()
+    serializer_class = PostSerializer
 
 
-# class UserDetail(RetrieveUpdateDestroyAPIView):
-#     queryset = get_user_model().objects.all()
-#     serializer_class = PostSerializer
+class UserDetail(RetrieveUpdateDestroyAPIView):
+    queryset = get_user_model().objects.all()
+    serializer_class = PostSerializer
